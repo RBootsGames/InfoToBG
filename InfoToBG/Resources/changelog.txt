@@ -1,0 +1,83 @@
+---------- v 1.5.4 --------
+* Clicking the power settings button will create a batch file in the startup folder which will close the sysprep window on boot.
+* Reworked the opacity slider to no longer use a third-party DLL. (Should help with load speeds.)
+
+---------- v 1.5.3 --------
+* The power setting button will now actually disable sleeping on lid close.
+
+---------- v 1.5.2 --------
+* Fixed toggle button image for touchscreen.
+* Hopefully fixed the power settings button.
+* Changing the opacity bar no longer applies the background if one hasn't been generated yet.
+* Turning on the SSD option now applies it to the smallest drive if multiple are installed.
+* Storage drives and GPU VRAM now store capacity as byte count instead of already converted GB or TB.
+* Fixed the debug file not being added to or used.
+* Can now run the program while the flash drive has been disconnected.
+* Certain GPUs will no longer have multiple spaces in the name.
+* Setting the screen size to 0 will exclude information about the screen.
+
+---------- v 1.5.1 --------
+* Redesigned everything.
+* Added button to set power settings.
+* Created Custom controls for the wallpaper selectors.
+
+---------- v 1.5.0 --------
+* Fixed: If a custom addition was added then removed and 'update' was clicked, the changes wouldn't get saved.
+* Fixed: When selecting a different wallpaper, if it was a different vertical resolution it wouldn't add the information centered vertically until it was updated.
+* Fixed: If SSD is checked and there are multiple drives it will label them all as an SSD.
+* Added a tooltip to the custom wallpaper button.
+* If you click the update button before running an initial scan, it will create a new scan.
+* Resolution will be based on total pixel count now. (Some monitors will have weird resolution settings so this should fix that.)
+* Added antialiasing for the text, so it should look slightly prettier.
+* Added our new Comprenew background as the default wallpaper.
+* Rewrote how to information overlay is created to simplify moving it to different locations. (but you don't care about that)
+* Added the ability to align the overlay to the left or the right of the screen.
+* If you are changing the wallpaper or opacity, the overlay is no longer re-generated from scratch. This should make it unnoticeably faster.
+
+---------- v 1.4.1 --------
+* added manual input for an extra item that may not be in the list
+* clicking the preview box doesn't change the image incorrectly
+* changing opacity will automatically update the wallpaper
+* ability to add custom desktop backgrounds (using 16:9 images will yield best results)
+* added drag and drop functionality to custom background importing
+* can no longer resize window
+
+---------- v 1.4.0 --------
+* added selection for 2 desktop backgrounds (1903 uses a different default backgound than older versions)
+* added scrollbar to adjust opacity for the text background
+
+---------- v 1.3.1 --------
+* added checkbox for SSD
+
+---------- v 1.3 ----------
+* entering the input fields highlights them automatically
+* program should be able to find proper resolution regardless of windows scaling settings
+	- it detects all possible resolutions that are supported and takes the highest value
+* now saves file with background image that saves computer information, which gives you the option to quickly change one of the manual settings without having to scan all the hardware again
+
+---------- v 1.2 ----------
+* changelog can now actually be opened
+* added checkbox for mini displayport
+* added more possible names for webcams in hopes to catch more of them automatically
+* added the full list of "captions" to the debug file in hopes to find some laptops that aren't detecting all extras properly
+
+known issues
+* computers that have windows scaling turned on will read the resolution incorrectly
+
+---------- v 1.1 ----------
+* no longer crashes when trying to read removable devices that aren't there (changed from detecting removability to checking interface type)
+* added debug file that may or may not be useful
+* added changelog
+
+---------- v 1.0 ----------
+currently auto-detects
+	CPU info
+	GPU info
+	Storage drive info
+	Screen resolution
+	RAM
+	Optical drive
+	OS info
+	USB 3
+	Webcam
+	Bluetooth
