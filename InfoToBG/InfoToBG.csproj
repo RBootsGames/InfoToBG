@@ -66,27 +66,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Computer.cs" />
-    <Compile Include="Ctrl_Opacity.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Ctrl_Opacity.cs" />
     <Compile Include="Ctrl_Opacity.Designer.cs">
       <DependentUpon>Ctrl_Opacity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ctrl_RadioButtons.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Ctrl_RadioButtons.cs" />
     <Compile Include="Ctrl_RadioButtons.Designer.cs">
       <DependentUpon>Ctrl_RadioButtons.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ctrl_ToggleButton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Ctrl_ToggleButton.cs" />
     <Compile Include="Ctrl_ToggleButton.Designer.cs">
       <DependentUpon>Ctrl_ToggleButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ctrl_WallpaperSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Ctrl_WallpaperSelector.cs" />
     <Compile Include="Ctrl_WallpaperSelector.Designer.cs">
       <DependentUpon>Ctrl_WallpaperSelector.cs</DependentUpon>
     </Compile>
@@ -97,9 +89,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ctrl_ProgressBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Ctrl_ProgressBar.cs" />
     <Compile Include="Ctrl_ProgressBar.Designer.cs">
       <DependentUpon>Ctrl_ProgressBar.cs</DependentUpon>
     </Compile>
